@@ -1,0 +1,227 @@
+@charset "UTF-8";
+
+@keyframes animacao {
+    0% {background-image: url('../imagens/chico-em-brotas.jpg');}
+    15% {background-image: url('../imagens/64569988-2f01-4f20-bb6d-a0db909a4d8f.jpg');}
+    30% {background-image: url('../imagens/biel-e-chico.jpg');}
+    45% {background-image: url('../imagens/1edebb15-fd0f-4539-8a65-72bb316da9fb.jpg');}
+    60% {background-image: url('../imagens/chico-no-sofa.jpg');}
+    75% {background-image: url('../imagens/biel-filipe-chico.jpg');}
+    100% {background-image: url('../imagens/chico-em-brotas.jpg');}
+}
+
+:root {
+    --cor-azul: rgb(11, 149, 255);
+    --cor-rosa: rgb(255, 178, 169);
+    --cor-roxo: rgb(172, 181, 255);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    justify-content: space-between;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+header #div1 {
+    margin-top: 30px;
+}
+
+header #navegacao {
+    padding-top: 20px;
+}
+
+header #navegacao p {
+    font-size: 1.4em;
+    padding-left: 40px;
+}
+
+header #navegacao a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor-azul);
+    margin-left: 10px;
+    justify-content: flex-start;
+}
+
+header #navegacao a:hover {
+    color: rgb(3, 57, 99);
+    transition: .5s;
+}
+
+header nav{
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.3em;
+}
+
+header h1 {
+    align-self: center;
+    font-variant: small-caps;
+    font-size: 10vw;
+    margin-bottom: 0;
+}
+
+header section#inicio {
+    line-height: 7em;
+    padding-top: 25%;
+    margin-left: 3vw;
+}
+
+div#div2 {
+    width: 60%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: right center;
+
+    animation-name: animacao;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+main {
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+}
+
+main section {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    
+    flex-direction: row;
+}
+
+ul {
+    list-style-image: url('../imagens/');
+}
+
+main img {
+    border-radius: 50%;
+    width: 40vw;
+    max-width: 300px;
+    height: 40vw;
+    max-height: 300px;
+    object-fit: cover;
+    display: inline-block;
+    margin-top: 70px;
+}
+
+main p {
+    display: inline-block;
+    width: 90%;
+}
+
+main h2 {
+    font-size: 3em;
+}
+
+main section#mensagem {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section#mensagem p {
+    text-align: right;
+    margin-left: 30px;
+    text-indent: 2em;
+    margin-bottom: 0;
+}
+
+section#mensagem img {
+    align-self: flex-end;
+    margin-top: 50px;
+}
+
+iframe {
+    width: 70vw;
+    height: 365px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    margin: auto;
+}
+
+img#seta {
+    margin: 0;
+    display: block;
+    transform: translate(-200px, 350px);
+}
+
+#mensagem-final {
+    margin-top: 300px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#lembrancas {
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+#lembrancas h2 {
+    text-align: center;
+    margin-top: 150px;
+}
+
+#h3final, #coracao-imagem {
+    display: inline-block;
+}
+
+#coracao-imagem {
+    max-width: none;
+    max-height: none;
+    border-radius: 0%;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    transform: translate(30px, -35px);
+}
+
+footer {
+    background-color: var(--cor-roxo);
+    padding: 10px;
+    text-align: center;
+}
+
+footer h1, footer p {
+    margin: 0;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: inherit;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

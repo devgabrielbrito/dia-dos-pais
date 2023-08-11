@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px) {
+    #chico-com-raquete, #chico-com-biel{
+        width: 30vw;
+        height: 30vw;
+    }
+
+    #mensagem p{
+        transform: translateX(-30px);
+    }
+
+    #chico-com-raquete {
+        transform: translateX(-100px);
+    }
+
+    #coracao-imagem {
+        display: none;
+    }
+
+    header section#inicio {
+        line-height: 40px;
+    }
+
+    header #navegacao a {
+        display: block;
+        padding: 3px;
+        margin: 3px;
+        text-decoration: underline;
+    }
+}
