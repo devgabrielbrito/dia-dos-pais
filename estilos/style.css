@@ -168,9 +168,14 @@ iframe {
 }
 
 img#seta {
+    width: 150px;
+    height: auto;
+    object-fit: fill;
+    border-radius: none;
     margin: 0;
+    margin-bottom: 400px;
     display: block;
-    transform: translate(-200px, 350px);
+    transform: translate(-140px, 390px);
 }
 
 #mensagem-final {
